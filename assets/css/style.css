@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #4646cc, #b95bdf);
+    min-height: 50px;
+    font-size: 2em;
+    color: white;
+}
+
+.sidebar {
+    max-width: 25rem;
+}
+
+h2 {
+    margin: 10px;
+}
+
+input {
+    font-size: 1.2em;
+    margin: 3px 10px;
+    min-height: 25px;
+    min-width: 91%;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.2em;
+    margin: 3px 10px;
+    color: white;
+    background-color: #4646cc;
+    border: none;
+    min-height: 25px;
+    min-width: 93%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #4646cc, #b95bdf);
+}
+
+.current-weather {
+    display: inline;
+}
