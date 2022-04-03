@@ -101,6 +101,9 @@ function loadCity() {
     previousSearch = JSON.parse(localStorage.getItem("City"));
     var button = "";
 
+    if (previousSearch == null) {
+        previousSearch = [];
+    }
     for (var i = 0; i < previousSearch.length; i++) {
         button += '<button type="button" id="button" onclick="recentWeather(previousSearch[' + i + '])">' + previousSearch[i].cityName + '</button>';
     }
