@@ -78,6 +78,10 @@ hr {
     flex-grow: 1;
 }
 
+img {
+    width: 50px;
+}
+
 h2 {
     margin: 10px;
 }
@@ -102,4 +106,29 @@ li {
     list-style-type: none;
     font-size: 1.25em;
     margin: 10px 0;
+}
+
+.uvi-low {
+    color: white;
+    background-color: green;
+}
+
+.uvi-moderate {
+    color: white;
+    background-color: yellow;
+}
+
+.uvi-high {
+    color: white;
+    background-color: orange;
+}
+
+.uvi-very-high {
+    color: white;
+    background-color: red;
+}
+
+.uvi-extreme {
+    color: white;
+    background-color: purple;
 }
