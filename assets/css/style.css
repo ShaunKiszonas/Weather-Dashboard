@@ -45,7 +45,7 @@ header {
 .current-weather {
     margin: 10px 15px;
     border: 1px solid black;
-    background-color: #e4e4e4;
+    background-color: #c4c4c4;
 }
 
 hr {
@@ -53,7 +53,7 @@ hr {
     width: 100%;
 }
 
-.previous-search button {
+#previous-search button {
     background-color: rgb(145, 145, 145);
     margin: 5px 10px;
 }
@@ -67,7 +67,7 @@ hr {
 }
 
 .day-info {
-    background-color: #1f456b;
+    background-color: #325c86;
     color: white;
     margin: 10px;
     padding: 5px 10px;
@@ -114,7 +114,7 @@ li {
 }
 
 .uvi-moderate {
-    color: white;
+    color: black;
     background-color: yellow;
 }
 
