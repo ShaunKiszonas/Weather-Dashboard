@@ -10,7 +10,7 @@ var uviColor = "uvi-low";
 function getCity(event) {
     event.preventDefault();
 
-    var getLatAndLon = 'http://api.openweathermap.org/geo/1.0/direct?q=' + searchCity.value + '&appid=4ce1081bbd0cd6d45033a1dc8f18bcdf';
+    var getLatAndLon = 'https://api.openweathermap.org/geo/1.0/direct?q=' + searchCity.value + '&appid=4ce1081bbd0cd6d45033a1dc8f18bcdf';
 
     fetch(getLatAndLon)
         .then(function (response) {
