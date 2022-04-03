@@ -67,7 +67,7 @@ function subContent(id, data) {
     wind.textContent = data.wind_speed;
     humidity.textContent = data.humidity;
     date.textContent = moment(data.dt * 1000).format('MM/DD/YYYY');
-    image.src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
+    image.src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
     if (id == 0) {
         var uvI = document.querySelector('#uv-index');
         uvI.textContent = data.uvi;
