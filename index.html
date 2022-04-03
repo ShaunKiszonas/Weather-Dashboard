@@ -10,44 +10,86 @@
 </head>
 
 <body>
-    <header>Weather Dashboard</header>
-    <div class="sidebar">
-        <h2>Search for a City:</h2>
-        <form action="">
-            <input type="text" placeholder="City Name"> <br>
-            <button type="submit">Submit</button>
-        </form>
-        <hr>
-        <div class="previous-search"></div>
-    </div>
-
-    <div class="current-weather">
-        <h2 class="city-name city-date img">City (dd/mm/yyyy)</h2>
-        <ul class="weather-info">
-            <li id="temp">Temp: </li>
-            <li id="wind">Wind: </li>
-            <li id="humidity">Humidity: </li>
-            <li id="Uv-Index">UV Index: </li>
-        </ul>
-    </div>
-
-    <section class="five-day-forecast">
-        <h2>5-Day Forecast:</h2>
-        <div>
-
-            <div class="day-info">
-                <h3 id="date">dd/mm/yyyy</h3>
-                <img src="" alt="">
-                <ul class="weather-info">
-                    <li id="temp">Temp:</li>
-                    <li id="wind">Wind:</li>
-                    <li id="humidity">Humidity:</li>
-                </ul>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+        <section class="sidebar">
+            <h2>Search for a City:</h2>
+            <form id="get-city">
+                <input type="text" placeholder="City Name" id="search-city"> <br>
+                <button type="submit" id="button">Submit</button>
+            </form>
+            <hr>
+            <div class="previous-search">
             </div>
+        </section>
+
+        <div class="content">
+            <section class="current-weather">
+                <h2 id="current-city">City <span id="current-date">(dd/mm/yyyy)</span></h2>
+                <ul class=" weather-info">
+                    <li id="temp">Temp: </li>
+                    <li id="wind">Wind: </li>
+                    <li id="humidity">Humidity: </li>
+                    <li id="Uv-Index">UV Index: </li>
+                </ul>
+            </section>
+            <div class="five-day-content">
+                <h2>5-Day Forecast:</h2>
+                <section class="five-day-forecast">
+                    <div class="day-info" id="day-one">
+                        <h3 id="five-day-date">dd/mm/yyyy</h3>
+                        <img src="" alt="">
+                        <ul class="weather-info">
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                    <div class="day-info" id="day-two">
+                        <h3 id="five-day-date">dd/mm/yyyy</h3>
+                        <img src="" alt="">
+                        <ul class="weather-info">
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                    <div class="day-info" id="day-three">
+                        <h3 id="five-day-date">dd/mm/yyyy</h3>
+                        <img src="" alt="">
+                        <ul class="weather-info">
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                    <div class="day-info" id="day-four">
+                        <h3 id="five-day-date">dd/mm/yyyy</h3>
+                        <img src="" alt="">
+                        <ul class="weather-info">
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                    <div class="day-info" id="day-five">
+                        <h3 id="five-day-date">dd/mm/yyyy</h3>
+                        <img src="" alt="">
+                        <ul class="weather-info">
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            </section>
         </div>
-    </section>
+    </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

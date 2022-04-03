@@ -1,15 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #4646cc, #b95bdf);
-    min-height: 50px;
-    font-size: 2em;
+    background-image: linear-gradient(to right, #4646cc, #7b2c9b);
+    width: 100%;
     color: white;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .sidebar {
-    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.sidebar button {
+    font-size: 1.2em;
+    margin: 3px 10px;
+    color: white;
+    background-color: #4646cc;
+    border: none;
+    min-height: 30px;
+    min-width: 100%;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sidebar button:hover {
+    background-image: linear-gradient(to right, #4646cc, #7b2c9b);
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.current-weather {
+    margin: 10px 15px;
+    border: 1px solid black;
+    background-color: #e4e4e4;
+}
+
+hr {
+    margin: 10px;
+    width: 100%;
+}
+
+.previous-search button {
+    background-color: rgb(145, 145, 145);
+    margin: 5px 10px;
+}
+
+.five-day-content {
+    margin-left: 15px;
+}
+
+.five-day-forecast {
+    display: flex;
+}
+
+.day-info {
+    background-color: #1f456b;
+    color: white;
+    margin: 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 h2 {
@@ -19,26 +85,21 @@ h2 {
 input {
     font-size: 1.2em;
     margin: 3px 10px;
-    min-height: 25px;
-    min-width: 91%;
+    min-height: 40px;
+    min-width: 100%;
     border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-button {
-    font-size: 1.2em;
-    margin: 3px 10px;
-    color: white;
-    background-color: #4646cc;
-    border: none;
-    min-height: 25px;
-    min-width: 93%;
-    border-radius: 5px;
+ul {
+    margin: 5px;
+    padding: 0;
 }
 
-button:hover {
-    background-image: linear-gradient(to right, #4646cc, #b95bdf);
-}
-
-.current-weather {
-    display: inline;
+li {
+    list-style-type: none;
+    font-size: 1.25em;
+    margin: 10px 0;
 }
